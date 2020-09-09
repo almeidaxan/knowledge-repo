@@ -92,8 +92,8 @@ if args.repo is None:
 # initialised will be enforced.
 try:
     repo = knowledge_repo.KnowledgeRepository.for_uri(args.repo)
-except (ValueError, git.GitError, gitdb.exc.ODBError):  # TODO: Generalise error to cater for all KnowledgeRepository instances.
-    repo = None
+#except (ValueError, git.GitError, gitdb.exc.ODBError):  # TODO: Generalise error to cater for all KnowledgeRepository instances.
+#    repo = None
 
 
 # Update repository so that we can ensure git repository configuration is up to date
