@@ -90,8 +90,9 @@ if args.repo is None:
 # the repository for various reasons, such as it not existing. At this point,
 # that is okay. Later on the requirement that te repository be correctly
 # initialised will be enforced.
-try:
-    repo = knowledge_repo.KnowledgeRepository.for_uri(args.repo)
+#try:
+repo = knowledge_repo.KnowledgeRepository.for_uri(args.repo)
+print(repo)
 #except (ValueError, git.GitError, gitdb.exc.ODBError):  # TODO: Generalise error to cater for all KnowledgeRepository instances.
 #    repo = None
 
